@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .squareContainer {
+        width: 100%;
+        height: auto;
+        background-color: aliceblue;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* align-items: center; */
+      }
+      .square {
+        width: 200px;
+        margin-bottom: 20px;
+        height: 200px;
+        border: 1px solid black;
+        background: blue;
+      }
+      .rectangle {
+        width: 500px;
+        margin-bottom: 20px;
+
+        height: 200px;
+        background: rebeccapurple;
+        border: 1px solid black;
+      }
+      .circle {
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+      }
+      .trapezoid {
+        border-bottom: 50px solid #555;
+        border-left: 25px solid transparent;
+        height: 0;
+        border-right: 25px solid transparent;
+        width: 125px;
+        margin-bottom: 20px;
+      }
+      .oval {
+        background-color: #555;
+        width: 150px;
+        height: 75px;
+        border-radius: 100%;
+      }
+      .parallelogram {
+        width: 300px;
+        height: 150px;
+        background-color: red;
+        transform: skew(20deg);
+      }
+      .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid #555;
+        margin-bottom: 20px;
+      }
+      .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 25px solid red;
+        border-right: 25px solid orange;
+        border-top: 50px solid #555;
+        border-bottom: 25px solid silver;
+        border-radius: 10px;
+      }
+      .example {
+        width: 200px;
+        height: 0px;
+        /* background-color: aqua; */
+        margin-bottom: 20px;
+        border-top: 50px solid #555;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="squareContainer">
+        <div class="example"></div>
+        <div class="square"></div>
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+        <div class="trapezoid"></div>
+        <div class="oval"></div>
+        <div class="parallelogram"></div>
+        <div class="triangle-up"></div>
+        <div class="triangle-down"></div>
+      </section>
+    </main>
+  </body>
+</html>
